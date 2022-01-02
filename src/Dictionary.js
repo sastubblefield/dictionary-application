@@ -4,16 +4,14 @@ import axios from "axios";
 
 export default function Dictionary() {
   let [keyword, getKeyword] = useState("");
-let [ results, seeResults] = useState ({})
+  let [results, seeResults] = useState(null);
   function handleResponse(response) {
-    console.log(response.data[0]);
     seeResults(response.data[0]);
   }
 
   function search(event) {
     event.preventDefault();
-
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -32,7 +30,7 @@ let [ results, seeResults] = useState ({})
           onChange={handleKeyword}
         />
       </form>
-      <Results results={results}/>
+      <Results results={results} />
     </div>
   );
 }
