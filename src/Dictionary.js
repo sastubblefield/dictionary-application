@@ -24,7 +24,7 @@ export default function Dictionary() {
       {" "}
       <form onSubmit={search} className="mt-5">
         <input
-          className="form-control"
+          className="form-control mb-5"
           type="search"
           placeholder="Type Here"
           onChange={handleKeyword}
