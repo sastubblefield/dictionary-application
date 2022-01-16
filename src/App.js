@@ -9,10 +9,10 @@ function App() {
       </h1>
       <h2 className="mt-5 font-weight-normal">DICTIONARY SEARCH</h2>
       <Dictionary />
-      <div className="font-weight-lighter text-center">
+      <div className="font-weight-lighter text-center open-source-link">
         <div>
           <a
-          className="open-source-link"
+            className="open-source-link"
             href="https://github.com/sastubblefield/dictionary-application"
             target="blank"
           >

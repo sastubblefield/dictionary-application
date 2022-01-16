@@ -13,4 +13,8 @@ h2 {
 }
 .open-source-link {
   color: grey;
+  font-size: 12px;
+}
+.results-styling {
+  border-color: black;
 }

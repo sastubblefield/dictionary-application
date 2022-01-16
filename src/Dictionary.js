@@ -30,7 +30,7 @@ export default function Dictionary() {
           onChange={handleKeyword}
         />
       </form>
-      <Results results={results} />
+      <Results className= "results-styling" results={results} />
     </div>
   );
 }
