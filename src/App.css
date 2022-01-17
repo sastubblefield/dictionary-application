@@ -7,9 +7,9 @@
 .heading {
   text-align: center;
   font-size: 70px;
-  color: rgba(0,0,0,0.6);
-text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 h2 {
   text-align: center;
@@ -21,4 +21,9 @@ h2 {
 }
 .results-styling {
   border-color: black;
+}
+@media (max-width: 750px) {
+  .heading {
+    font-size: 50px;
+  }
 }
